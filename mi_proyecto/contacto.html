@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Bodas Stylish Contacto</title>
+
+	<meta charset="utf-8">
+
+	<style type="text/css">
+
+	h2 {margin-left: 4em; }	
+	body {background-image: url(imagen/background1.jpg); background-repeat: repeat; background-size: 5em; color: rgb(52,73,94); }
+	form {width: 50%; margin-left: 5em; color: rgb(52,73,94);}
+	fieldset{background-color: rgb(234,237,237);}
+
+
+	</style>
+</head>
+<body>
+
+<h2>Contacto</h2>
+
+<form action="mailto:direccion@correo.com" method="post" enctype="text/plain">
+
+<fieldset>
+	
+	<legend>Datos de Contacto</legend>
+
+	<label>Nombre </label><br>
+	<input type="text" name="nombre"><br>
+	<label>Apellidos</label><br>
+	<input type="text" name="Apellidos" size="50"><br>
+	<label>telefono 1</label><br>
+	<input type="text" name="tel1"><br>
+	<label>telefono 2</label><br>
+	<input type="text" name="tel2"><br>
+	<label>correo electronico</label><br>
+	<input type="text" name="correo" size="35"><br><br>
+
+</fieldset>
+
+<fieldset>
+	
+	<legend>Datos del Evento</legend>
+
+	<label>Tipo de Evento</label><br>
+	<input type="radio" name="tipo" value="boda" checked="checked"><label>Boda</label><br>
+	<input type="radio" name="tipo" value="otro"><label>Otro tipo de evento</label><br><br>
+	<label>fecha estimada</label><br>
+	<input type="date" name="fecha"><br><br>
+	<label for="descr">Descripción </label><br>
+	<textarea name="descr" id="descr" rows="5" cols="40" maxlength="400"></textarea><br><br>
+	<input type="submit" value="Guardar Cambios">
+	<input type="reset" value="Borrar los datos introducidos">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
